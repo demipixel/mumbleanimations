@@ -54,7 +54,6 @@ process.on('SIGINT', function() {
 
 function LethalAnimation() {
   var animatedText = ' OFF SEASON ';
-  var blankText = '                         ';
   var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
@@ -66,10 +65,10 @@ function LethalAnimation() {
   } else if ((miniCount - animatedText.length) % (flashLength * 2) < flashLength) {
     mid = animatedText;
   } else {
-    mid = blankText;
+    mid = '';
   }
 
-  return this.name + ' [' + mid + ']';
+  return this.name + ' | ' + mid;
 }
 
 function ChessAnimation() {
