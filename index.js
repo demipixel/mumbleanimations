@@ -68,7 +68,7 @@ function LethalAnimation() {
     mid = '';
   }
 
-  return this.name + ' | ' + mid;
+  return this.name + ' |' + mid;
 }
 
 function ChessAnimation() {
