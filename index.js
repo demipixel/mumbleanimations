@@ -29,7 +29,7 @@ var onInit = function(c) {
   console.log( 'Connection initialized');
 
   animations.push(new ChannelAnimation(1, 'Lethal Voltage', LethalAnimation, 75));
-  animations.push(new ChannelAnimation(3, 'Chess Champs 85', ChessAnimation, 75));
+  animations.push(new ChannelAnimation(3, 'Chess Champs 84', ChessAnimation, 75));
   animations.push(new ChannelAnimation(4, 'DOU', DOUAnimation, 50));
 
   for (var a = 0; a < animations.length; a++) {
@@ -72,16 +72,16 @@ function LethalAnimation() {
 }
 
 function ChessAnimation() {
-  var number = 85;
+  var number = 84;
   var moveLength = 15;
   var restTime = 50;
   var animationLength = moveLength*2 + restTime;
   var miniCount = this.count % animationLength;
 
   if (miniCount < moveLength) {
-    number = Math.floor(84/moveLength * miniCount + 1);
+    number = Math.floor(83/moveLength * miniCount + 1);
   } else if (miniCount >= moveLength + restTime) {
-    number = Math.floor(84/moveLength * (moveLength*2 - (miniCount - restTime)) + 1)
+    number = Math.floor(83/moveLength * (moveLength*2 - (miniCount - restTime)) + 1)
   }
 
   //console.log('Chess Champs ' + number);
