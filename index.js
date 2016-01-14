@@ -53,7 +53,7 @@ process.on('SIGINT', function() {
 });
 
 function LethalAnimation() {
-  var animatedText = ' OFF SEASON ';
+  var animatedText = ' WEEK ONE - UPWARD ';
   var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
