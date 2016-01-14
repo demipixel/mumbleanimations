@@ -54,7 +54,7 @@ process.on('SIGINT', function() {
 
 function LethalAnimation() {
   var animatedText = ' WEEK ONE - UPWARD ';
-  var flashLength = animatedText.length;
+  var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
   var miniCount = this.count % animationLength;
