@@ -27,10 +27,11 @@ mumble.connect('107.191.51.136:64738', options, function ( error, c ) {
 var onInit = function(c) {
   server = c;
   console.log( 'Connection initialized');
+  //console.log(Object.keys(c.channels).map(i => i+': '+c.channels[i].name));
 
   animations.push(new ChannelAnimation(1, 'Lethal Voltage', LethalAnimation, 75));
-  animations.push(new ChannelAnimation(3, 'Chess Champs 84', ChessAnimation, 75));
   animations.push(new ChannelAnimation(4, 'DOU', DOUAnimation, 50));
+  animations.push(new ChannelAnimation(5, 'Iron Kiddos', IronKiddosAnimation, 500));
 
   for (var a = 0; a < animations.length; a++) {
     animations[a].startAnimation();
@@ -71,7 +72,7 @@ function LethalAnimation() {
   return this.name + ' |' + mid;
 }
 
-function ChessAnimation() {
+/*function ChessAnimation() {
   var number = 84;
   var moveLength = 15;
   var restTime = 50;
@@ -86,6 +87,13 @@ function ChessAnimation() {
 
   //console.log('Chess Champs ' + number);
   return 'Chess Champs ' + number;
+}*/
+
+function IronKiddosAnimation() {
+  var names = ['Plastic','Plastic','Plastic','Plastic','Plastic','Iron','Steel','Silver','Gold','Plat'];
+  var miniCount = this.count % names.length;
+
+  return names[miniCount] + ' Kiddos'
 }
 
 function DOUAnimation() {
