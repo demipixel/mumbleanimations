@@ -62,7 +62,7 @@ function LethalAnimation() {
   var mid = '';
 
   if (miniCount < animatedText.length) {
-    mid = animatedText.slice(miniCount, this.name.length) + animatedText.slice(0, miniCount);
+    mid = animatedText.slice(miniCount, animatedText.length) + animatedText.slice(0, miniCount);
   } else if ((miniCount - animatedText.length) % (flashLength * 2) < flashLength) {
     mid = animatedText;
   } else {
