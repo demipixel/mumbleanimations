@@ -20,7 +20,7 @@ mumble.connect('107.191.51.136:64738', options, function ( error, c ) {
     client.authenticate('DemiBot');
     client.on( 'initialized', onInit );
     client.on('error', function(e) {
-        console.log(e.message);
+        console.log('Error',e);
     });
 });
 
@@ -54,7 +54,7 @@ process.on('SIGINT', function() {
 });
 
 function LethalAnimation() {
-  var animatedText = ' WEEK ONE - UPWARD ';
+  var animatedText = ' WEEK THREE - GULLYWASH ';
   var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
