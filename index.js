@@ -29,7 +29,7 @@ var onInit = function(c) {
   console.log( 'Connection initialized');
   //console.log(Object.keys(c.channels).map(i => i+': '+c.channels[i].name));
 
-  animations.push(new ChannelAnimation(1, 'Lethal Voltage', LethalAnimation, 75));
+  animations.push(new ChannelAnimation(1, '7-1 Dream Team', LethalAnimation, 75));
   animations.push(new ChannelAnimation(4, 'DOU', DOUAnimation, 50));
   animations.push(new ChannelAnimation(5, 'Iron Kiddos', IronKiddosAnimation, 500));
 
@@ -54,7 +54,7 @@ process.on('SIGINT', function() {
 });
 
 function LethalAnimation() {
-  var animatedText = ' WEEK THREE - GULLYWASH ';
+  var animatedText = ' WEEK FOUR - PRODUCT ';
   var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
