@@ -54,7 +54,7 @@ process.on('SIGINT', function() {
 });
 
 function LethalAnimation() {
-  var animatedText = ' PRE-SEASON SCRIMS ';
+  var animatedText = ' NOT-MAYBE-SORTA-PROBABLY DEAD ';
   var flashLength = 10;
   var flashCount = 4;
   var animationLength = animatedText.length + 2*flashLength*flashCount;
